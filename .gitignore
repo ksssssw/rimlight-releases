@@ -1,0 +1,8 @@
+# DMG와 서명·공증 산출물은 GitHub Releases에만 올린다. 저장소에는 appcast.xml만 둔다.
+*.dmg
+*.dmg.sha256
+*.zip
+build/
+
+# macOS
+.DS_Store

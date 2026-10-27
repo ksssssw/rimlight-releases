@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>Rimlight</title>
+        <link>https://github.com/ksssssw/rimlight-releases/releases</link>
+        <description>Rimlight 업데이트 피드. 소스 저장소의 scripts/release.sh가 generate_appcast로 갱신한다. 1.0.0은 Sparkle 이전 버전이라 항목이 없다.</description>
+        <language>ko</language>
+    </channel>
+</rss>
