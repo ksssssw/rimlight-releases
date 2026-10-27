@@ -1,9 +1,39 @@
-<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
     <channel>
         <title>Rimlight</title>
         <link>https://github.com/ksssssw/rimlight-releases/releases</link>
         <description>Rimlight 업데이트 피드. 소스 저장소의 scripts/release.sh가 generate_appcast로 갱신한다. 1.0.0은 Sparkle 이전 버전이라 항목이 없다.</description>
         <language>ko</language>
+        <item>
+            <title>1.1.0</title>
+            <pubDate>Wed, 28 Oct 2026 00:37:48 +0900</pubDate>
+            <link>https://github.com/ksssssw/rimlight-releases/releases</link>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>1.1.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <description sparkle:format="markdown"><![CDATA[### Added
+- 앱 안에서 업데이트를 확인하고 설치합니다(Sparkle). 메뉴 막대의 "업데이트 확인…"과 설정 › 일반 › 업데이트에서 쓸 수 있고, 하루에 한 번 자동으로 확인합니다.
+- 위치 편집 화면에 중앙 십자선·3분할선·여백선을 표시하고, 카드를 가까이 가져가면 선에 맞춰 붙습니다. ⌥(option)을 누른 채 끌면 자유롭게 놓을 수 있습니다.
+- 설정 › 일반에 "집중 모드 중에는 표시 안 함" 스위치를 추가했습니다(기본 켜짐). 집중 모드가 켜지는 순간 떠 있던 스낵바도 내려가고, 메뉴 막대에 숨김 상태가 표시됩니다.
+- 설정 › 일반에 "앞에 있는 앱의 알림은 건너뜀" 스위치를 추가했습니다(기본 꺼짐).
+- 일시정지에 "다시 켤 때까지" 옵션을 추가했습니다.
+- 응용 프로그램 폴더 밖(디스크 이미지, 다운로드 폴더)에서 처음 실행하면 응용 프로그램 폴더로 옮길지 묻고, 옮긴 뒤 자동으로 다시 실행합니다. 설정과 첫 실행 안내의 경고 문구 옆에도 "옮기기" 버튼이 생겼습니다.
+- 일시정지하면 언제까지 멈추는지 스낵바로 잠깐 알려 줍니다.
+- Rimlight 정보 창에 오픈 소스 고지(Sparkle 라이선스)를 넣었습니다.
+
+### Changed
+- 스낵바에 얇은 테두리와 그림자를 더해 비슷한 밝기의 창 위에서도 경계가 보입니다.
+- 설정에 저장된 여백 값이 허용 범위(0–120pt)를 벗어나면 읽을 때 범위 안으로 맞춥니다.
+- 위치 편집 화면의 기준선과 프리셋 자리는 카드를 끄는 동안 가까운 것만 서서히 드러나고, 안내 판은 화면 가운데로 옮겼습니다.
+- 설정 › 앱 목록이 부드럽게 스크롤되도록 행을 가볍게 했습니다. 목록을 순수 SwiftUI로 그리고, 앱 아이콘은 작은 크기로 미리 만들어 두며, 색상 칸은 눌렀을 때만 색 선택기를 띄우고, 켬/끔 스위치도 직접 그립니다.
+
+### Internal
+- 설치 파일과 업데이트 피드는 공개 배포 저장소 [ksssssw/rimlight-releases](https://github.com/ksssssw/rimlight-releases)에서 제공합니다. 소스 저장소는 비공개라 Sparkle이 직접 받을 수 없기 때문입니다.
+- 표시 여부 판단·재시도 간격·일시정지 기간 계산을 순수 타입으로 분리하고 임계값 테스트를 추가했습니다.
+- GitHub Actions에서 PR마다 단위 테스트와 서명 없는 Release 빌드를 돌립니다.
+]]></description>
+            <enclosure url="https://github.com/ksssssw/rimlight-releases/releases/download/v1.1.0/Rimlight-1.1.0.dmg" length="4416437" type="application/octet-stream" sparkle:edSignature="RrkpfPlPhmwwA36UxGdwV8u0LAkYfTUn7Aue3WiCSLj9G7iOi192YvI5dk0eDLkW1K+Qin3KBV0p00WRbizTAQ=="/>
+        </item>
     </channel>
 </rss>
